@@ -78,7 +78,11 @@
       <artifactId>junit-ordered-test-runner</artifactId>
       <version>1.0.1</version>
       <scope>test</scope>
-    </dependency>
+    </dependency>    
+	<dependency>
+	    <groupId>org.postgresql</groupId>
+	    <artifactId>postgresql</artifactId>
+	    </dependency>
   </dependencies>
 
   <build>
