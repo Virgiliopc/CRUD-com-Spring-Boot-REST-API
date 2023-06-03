@@ -83,7 +83,7 @@ public class GreetingsController {
     
     @GetMapping(value = "buscaruserid")/*Mapeia a URL*/
     @ResponseBody /*Descrição da resposta*/
-    public ResponseEntity<Usuario> buscaruserid(@RequestParam(name = "iduser") Long iduser){ /*Recebe os dados para deletar*/
+    public ResponseEntity<Usuario> buscaruserid(@RequestParam(name = "iduser") Long iduser){ /*Recebe os dados para consultar*/
     	
     	Usuario usuario = usuarioRepository.findById(iduser).get();
     	
