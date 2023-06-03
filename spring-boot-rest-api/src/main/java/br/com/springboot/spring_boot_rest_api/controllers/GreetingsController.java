@@ -74,11 +74,21 @@ public class GreetingsController {
     
     @DeleteMapping(value = "delete")/*Mapeia a URL*/
     @ResponseBody /*Descrição da resposta*/
-    public ResponseEntity<String> deleter(@RequestParam Long iduser){ /*Recebe os dados para deletar*/
+    public ResponseEntity<String> delete(@RequestParam Long iduser){ /*Recebe os dados para deletar*/
     	
     	usuarioRepository.deleteById(iduser);
     	
     	return new ResponseEntity<String>("User deletado com sucesso!", HttpStatus.OK );
     }
+    
+    @GetMapping(value = "buscaruserid")/*Mapeia a URL*/
+    @ResponseBody /*Descrição da resposta*/
+    public ResponseEntity<Usuario> buscaruserid(@RequestParam(name = "iduser") Long iduser){ /*Recebe os dados para deletar*/
+    	
+    	Usuario usuario = usuarioRepository.findById(iduser).get();
+    	
+    	return new ResponseEntity<Usuario>(usuario, HttpStatus.OK );
+    }
+
     
 }
