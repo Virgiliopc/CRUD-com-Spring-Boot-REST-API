@@ -11,7 +11,7 @@ import br.com.springboot.spring_boot_rest_api.model.Usuario;
 @Repository
 public interface UsuarioRepository extends JpaRepository<Usuario, Long> {
 	
-	@Query(value = "select u from Usuario u where u.nome like %?1%")
+	@Query(value = "select u from Usuario u where upper(trim(u.nome)) like %?1%")
 	List<Usuario> buscarPorNome(String name);
 
 }
