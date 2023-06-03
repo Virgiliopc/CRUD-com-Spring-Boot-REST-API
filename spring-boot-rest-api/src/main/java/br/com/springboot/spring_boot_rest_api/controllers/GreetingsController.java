@@ -74,7 +74,7 @@ public class GreetingsController {
     
     @DeleteMapping(value = "delete")/*Mapeia a URL*/
     @ResponseBody /*Descrição da resposta*/
-    public ResponseEntity<String> deleter(@RequestParam Long iduser){ /*Recebe os dados para salvar*/
+    public ResponseEntity<String> deleter(@RequestParam Long iduser){ /*Recebe os dados para deletar*/
     	
     	usuarioRepository.deleteById(iduser);
     	
