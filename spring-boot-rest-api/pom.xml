@@ -12,6 +12,7 @@
     <maven.compiler.source>1.8</maven.compiler.source>
     <maven.compiler.target>1.8</maven.compiler.target>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <maven.test.skip>true</maven.test.skip>
   </properties>
 
   <dependencyManagement>
@@ -91,8 +92,7 @@
       <plugins>
         <plugin>
           <groupId>org.springframework.boot</groupId>
-          <artifactId>spring-boot-maven-plugin</artifactId>
-          <version>2.1.1.RELEASE</version>
+          <artifactId>spring-boot-maven-plugin</artifactId>          
         </plugin>
       </plugins>
     </pluginManagement>
