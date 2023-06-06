@@ -79,6 +79,47 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
 <script type="text/javascript">
+
+	function pesquisaUser(){
+		var nome = $('#nameBusca').val();
+		
+		if(nome != null && nome.trim() != ''){
+			
+			$.ajax({
+				method: "GET",
+				url: "buscarPorNome",
+				data: "name=" + nome,					
+				success: function (response){	
+					$('tabelaResultados > tbody > tr').remove();
+					
+					for(var i = 0; i < response.length; i++){
+						$('#tabelaResultados > tbody').append('<tr><td>'+response[i].id+'</td><td>'+response[i].nome+'</td><td><button type="button" onclick="colocarEmEdicao('+response[i].id+')" class="btn btn-primary">Ver</button></td></tr>')
+					}
+				}
+			}).fail(function (xhr, status, errorThrown) {
+				alert("Erro ao buscar usuario: " + xhr.responseText);
+			});		
+		}
+	}
+	
+	function colocarEmEdicao(id){
+		
+		$.ajax({
+			method: "GET",
+			url: "buscaruserid",
+			data: "iduser=" + id,					
+			success: function (response){	
+				$("#id").val(response.id);
+				$("#nome"). val(response.nome);
+				$("#idade").val(response.idade);
+				
+				$("#modalPesquisaUser").modal('hide');
+			}
+		}).fail(function (xhr, status, errorThrown) {
+			alert("Erro ao buscar usuario por id: " + xhr.responseText);
+		});		
+	}
+	
 	function salvarUsuario(){
 		var id = $("#id").val();
 		var nome = $("#nome"). val();
