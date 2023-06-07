@@ -18,7 +18,7 @@ CRUD com Spring Boot REST API
       <strong>src/main/java:</strong> Application.java.
       <strong>src/main/java/controllers:</strong> Greetings.controller.java.
       <strong>src/main/java/model:</strong> Usuario.java.
-      <strong>src/main/java/respository:</strong> UsuarioRespository.java.
+      <strong>src/main/java/respository:</strong> UsuarioRepository.java.
    </li>
   
    <li>
