@@ -26,15 +26,15 @@ CRUD com Spring Boot REST API
    </li>
   
    <li>
-       <strong>src/test/java/requests</strong> Greetings.controllerTest.java.
+       <strong>src/test/java/requests: </strong> Greetings.controllerTest.java.
    </li>
 
    <li>
-       <strong>Maven Dependencies</strong> Dependências Maven.
+       <strong>Maven Dependencies: </strong> Dependências Maven.
    </li>
 
    <li>
-       <strong>target</strong> Arquivo jar.
+       <strong>target: </strong> Arquivo jar.
    </li>
 </ul>
 
