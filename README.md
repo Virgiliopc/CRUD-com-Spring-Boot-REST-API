@@ -39,9 +39,11 @@ CRUD com Spring Boot REST API
 </ul>
 
 
-<h2>Requisitos do navegador</h2>
+<h2>Recomendações</h2>
 <p>
-  Este aplicativo requer um navegador compatível com a API de Reconhecimento de Fala do navegador. Os navegadores mais recentes, como Google Chrome e Mozilla Firefox, são suportados. Se o navegador não suportar essa API, a função de reconhecimento de fala estará desabilitada.
+  Para que a aplicação possa ser utlizada é recomendável baixar o repositório. 
+  Instalar o PostgreSQL 9.5, Java JDK 17, Maven 3.8.5, Postman para testar as requisições(atualizar, deletar, listar, criar novo e buscar) e a IDE de sua preferência, no caso foi utilizada a Eclipse-Workspace. 
+
 </p>
 
 <h2>Ferramentas e tecnologias utilizadas</h2>
@@ -54,6 +56,9 @@ CRUD com Spring Boot REST API
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" title="Bootstrap" alt="Bootstrap" width="40" height="40"/>
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-original.svg" title="jquery" alt="jquery" width="40" height="40"/>
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" title="java" alt="java" width="40" height="40"/>
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" title="mysql" alt="mysql" width="40" height="40"/>
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg" title="postman" alt="postman" width="40" height="40"/>
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" title="PostgreSQL" alt="PostgreSQL" width="40" height="40"/>
   </div>
   
  <h2>Contate-me</h2>
